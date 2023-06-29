@@ -20,8 +20,6 @@ nltk.data.path.append(certifi.where())
 # Disable SSL certificate verification
 ssl._create_default_https_context = ssl._create_unverified_context
 
-# Rest of your code
-
 # Function to preprocess the review text
 def preprocess_text(text):
     # Tokenize the text into individual words
@@ -89,7 +87,6 @@ def translate_summary(summary, target_lang):
 
 # Main function for Streamlit app
 def main():
-    # Set page title and custom CSS styling
     st.set_page_config(page_title="Movie Review System", page_icon="🎥")
     st.markdown(
         """
